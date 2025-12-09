@@ -21,6 +21,8 @@ A new Flutter project.
 
 ===============================
 
+Install melos in project
+
 1- dart pub add melos 
 2- dart pub global activate melos 
 3- export PATH="$PATH":"$HOME/.pub-cache/bin" 
@@ -28,3 +30,8 @@ A new Flutter project.
 5- dart pub upgrade --major-versions 
 6- open ~/.zshrc
 7- export PATH="$JAVA_HOME/bin:$PATH:$HOME/.pub-cache/bin"
+
+8- melos init 
+   -- remove app and packages folder
+   -- add melos.yaml
+   -- inside melos add feature and core 
