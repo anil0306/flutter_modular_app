@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
-## How to create amodule ?
+## How to create a module ?
 1- create directory
 --> mkdir core
 
