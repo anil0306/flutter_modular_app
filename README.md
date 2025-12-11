@@ -35,3 +35,7 @@ Install melos in project
    -- remove app and packages folder
    -- add melos.yaml
    -- inside melos add feature and core 
+
+==================================
+
+to generate injection.config.dart 1- dart run build_runner watch --delete-conflicting-outputs 2- build->flutter->build apk (optional if the file is not auto generated after running the command line above)
