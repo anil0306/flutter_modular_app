@@ -1,3 +1,5 @@
+import 'package:app_settings/di/injection.dart';
+import 'package:datastore/di/injection.dart';
 import 'package:get_it/get_it.dart';
 import 'package:flutter_modular_app/di/injection.config.dart';
 import 'package:injectable/injectable.dart';
@@ -5,5 +7,8 @@ import 'package:injectable/injectable.dart';
 final getIt = GetIt.instance;
 
 @InjectableInit()
-void configureDependencies(String? environment) =>
-    getIt.init(environment: environment);
+void configureDependencies(String? environment) {
+  getIt.init(environment: environment);
+  configureAppSettingsDependencies(getIt, environment);
+  configureDataStoreDependencies(getIt, environment);
+}

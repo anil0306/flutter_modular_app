@@ -1,4 +1,4 @@
-name: profile
+name: datastore
 description: "A new Flutter package project."
 version: 0.0.1
 homepage:
@@ -8,12 +8,14 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  flutter_modular_app:
-    path: ../../..
+  get_it: ^8.0.3 
+  injectable: ^2.5.0  
   flutter:
     sdk: flutter
 
 dev_dependencies:
+  injectable_generator: ^2.7.0 
+  build_runner: ^2.4.15 
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
