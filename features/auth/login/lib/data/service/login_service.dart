@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
-import 'package:login/data/response/login_response.dart';
 import 'package:retrofit/dio.dart';
-import 'package:retrofit/error_logger.dart';
 import 'package:retrofit/http.dart';
+import 'parse_error_logger_compat.dart';
+import '../response/login_response.dart';
 
 part 'login_service.g.dart';
 
