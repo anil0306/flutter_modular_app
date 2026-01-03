@@ -2,6 +2,7 @@ import 'package:app_settings/provider/app_settings_provider.dart';
 import 'package:datastore/provider/session/session_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
+import 'package:login/login.dart';
 
 import 'di/injection.dart';
 
@@ -38,6 +39,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  void _incrementCounter() {
+    doLogin();
+  }
+
   @override
   Widget build(BuildContext context) {
     final appSettingsProvider = getIt<AppSettingsProvider>();
@@ -66,6 +71,12 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

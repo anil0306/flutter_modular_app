@@ -22,7 +22,9 @@ dependencies:
   data:
     path: ../../../core/data
   extensions:
-    path: ../../../core/extensions  
+    path: ../../../core/extensions
+  flutter_modular_app:
+    path: ../../..    
   flutter:
     sdk: flutter
 
